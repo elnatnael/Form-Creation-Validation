@@ -4,6 +4,11 @@ const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
 const feedbackDiv = document.getElementById('form-feedback');
 
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+  alert("Form submitted!");
+});
+
 // submit event listener validation
 form.addEventListener('submit', function(event) {
     event.preventDefault();
